@@ -1,0 +1,12 @@
+#Hashesare comments
+
+#http://en.wikipedia.org/wiki/Robots_exclusion_standard
+#http://www.robotstxt.org
+
+Sitemap: http://boot0080.site44.com/dsn1543/project-1/sitemap.xml
+
+User-agent: *
+
+Disallow: /folder-name-that-we-dont-want-to-show/
+Disallow: /tmp/
+Disallow: /assets/

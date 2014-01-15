@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+/* CSS */
+
+html, body{
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	width: 100%;
+	margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 100em){
+	html{
+		font-size: 1.5em;
+	}
+}
+
+h1, h2 {
+	text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'Antic Slab' , sans-serif;
+    color:#FCB39E;
+}
+
+h1, 
+.main,
+.copyright{
+	width: 100%;
+}
+
+h1 {
+display: none;
+}
+
+li {
+ font-size: .75rem;   
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 10px;
+	right: 5%;
+	background: #fff url('../images/nav-icon.svg') no-repeat center center;
+	/* background-color || background-image || background-repeat || background-position */	
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+	background-color: #ccc;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited{
+    font-family: 'Antic Slab', serif;
+    display: block;
+	padding: 1rem;
+	text-align: center;
+	color: #303B46;
+	text-decoration: none;
+    font-size: 1.12rem;
+    text-transform: uppercase;
+	border-top: 1px solid #fff;
+
+	/* border-width || border-style || border-color */
+}
+
+@media only screen and (min-width: 26em){
+    .nav{
+        overflow: auto;
+    }   
+
+    .nav li{
+		float: left;
+		width: 33.33%;
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;
+	}
+	
+	.nav-top{
+		max-height: 5rem;
+	}
+
+}
+
+@media only screen and (min-width: 53em){
+	.nav{
+		background-color: #fff;
+		text-align: center;
+	}
+	
+	.nav li{
+		display: inline-block;
+		float: none;
+		margin: 0;
+		width:auto;
+	}
+    
+    .main p {
+    max-width: 80%;
+    margin: 0 20%; 
+    }
+	
+	.nav a, 
+	.nav a:link,
+	.nav a:visited{
+		border-top: 0;
+	}
+	
+	.nav-top{
+		float: right;
+		margin-right: 2%;
+        margin-top: 2%
+	}
+
+	.logo{
+		float: left;
+		width: auto;
+	}
+	
+	header{
+		overflow: auto;
+	}
+    
+
+}
+
+.flexslider {
+	max-width: 45em; /*720px*/
+	margin: 3rem auto;
+}
+
+.flex-caption{
+	position: absolute;
+	width: 100%;
+	bottom: 1rem;
+	margin: 0;
+	padding: 1rem;
+	background-color: rgba (255,255,255,0.7);
+}
+
+img{
+	width: 100%;
+    position: relative;
+    max-width: 100px;
+}
+
+.logo{
+    margin: 0 auto;
+    max-width: 275px;
+    display: block;
+}
+	
+
+
+main h2 {
+	font-size: 2.5rem;
+}
+
+
+main ul {
+    font-size: .85rem;
+    line-height: 1.25rem;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+	text-align: center;	
+	line-height: 1.5rem;
+	padding: 4% 4%;
+}
+
+strong {
+	font-weight:bold;
+}
+
+
+/* Style for Accordian */
+
+ {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+input[name='panel'] {
+  display: none;
+}
+
+label {
+  display: block;
+  padding: 0.8em;
+  width: 100%;
+  height: 1em;
+  border-bottom: 0.1em solid hsl(0, 0%, 100%);
+  color: #303B46;
+  line-height: .25em;
+  cursor: pointer;
+}
+
+label:hover {
+  background:#FCB39E;
+}
+
+.collapsible {
+  display: block;
+  padding: 0 1em;
+  width: 100%;
+  background: hsl(0, 1%, 90%);
+}
+
+input[name='panel'] + .collapsible {
+  overflow: hidden;
+  height: 0;
+
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+}
+
+input[name='panel']:checked + .collapsible {
+  overflow: auto;
+  height: 200px; /* needs a numeric value here to keep transition */
+}
+
+/* End of Style For Accordian */
+
+@media only screen and (min-width: 37em){
+    
+    .collapsible {
+        width: 50%;
+        margin: 0 25%;
+    }
+
+    label {
+        width: 50%;
+     margin: 0 25%;
+    }
+
+    
+}
+
+.socialicons{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.socialicons li{
+	display: inline-block;
+	max-width: 2.5rem;
+    margin: 2%;
+    margin: 2%;
+}
+
+hr{
+	width: 90%;
+}
+
+
+.findus p {
+    line-height: .25rem;
+	text-align: center;
+	font-size: 13px;
+    padding: 2%;
+}
+
+.map {
+    display: none;
+}
+
+@media only screen and (min-width: 40em){
+        
+    .findus{
+        width: 40%;
+        margin-top: 3rem;
+    }
+    
+    .left{ 
+        float: left;
+        width: 30%;
+        margin-bottom: 2rem
+        
+    }
+    
+    .right{
+        float: right;
+        margin: 3rem 2%;
+}
+
+
+   .find {
+    float: left;
+    margin-left: 2rem;
+    }
+
+
+}
+
+.menu{
+    border-radius: 300px;
+     max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+	width: 100%; 
+	height: 4rem;
+}
+
+.info p {
+    font-size: 10px;
+    line-height: .15rem;
+    padding: 1%;
+}
+
+.copyright {
+ font-size: 9px;
+}
